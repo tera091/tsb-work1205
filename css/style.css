@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.nav {
+    /* 背景色設定 */
+    background-color: #666;
+}
+.nav ul {
+    /* 表示幅を90%に */
+    width: 90%;
+    /* フレックスボックス化 */
+    display: flex;
+    /* 先頭のポチをなくす */
+    list-style: none;
+    /* 余白の自動調整 （上下の余白は0、左右は自動調整）*/
+    margin: 0 auto;
+    /* 高さを50pxに指定 */
+    height: 50px;
+}
+.nav a {
+    /* アンダーライン削除 */
+    text-decoration: none;
+    /* 文字色設定 */
+    color: #fff;
+    /* 内側余白を上右下左の順で設定 */
+    padding: 10px 20px 10px 0px;
+    /*ブロックにする */
+    display: block;
+    /* 文字を大き目に設定 */
+    font-size: large;
+}
+
+.nav a:hover {
+    /* マウスオーバーした時の文字色を設定 */
+    color: #aaa;
+}
+
+
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer {
+    background-color: #666;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Contact */
+.contact_form {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.form_group {
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form_group label {
+    width: 30%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form_group input,
+.form_group textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 60%;
+    font-size: 18px;
+}
+
+.form_group input {
+    height: 40px;
+}
+
+.submit_btn {
+    padding: 5px 15px;
+    background-color: #049dbf;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+}
+
+.submit_btn:hover {
+    background-color: #0183a0;
+}
+
+.form_error {
+    padding-left: 30%;
+    width: 60%;
+    font-size: small;
+    color: red;
+    text-align: start;
+    padding-top: 10px;
+}
+.hidden {
+    display: none;
+}
